@@ -1,12 +1,40 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>Contact | Insurely</title>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
-<link rel="stylesheet" href="styles.css"/></head><body>
-<header><div class="wrap nav"><a class="logo" href="index.html">insure<span>ly</span></a><button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button><nav class="nav-links" id="navLinks"><a class="" href="index.html">Home</a><a class="" href="platform.html">Platform</a><a class="" href="solutions.html">Solutions</a><a class="" href="pricing.html">Pricing</a><a class="" href="about.html">About</a><a class="active" href="contact.html">Contact</a></nav><a class="btn btn-teal" href="contact.html">Start Free Trial</a></div></header>
+<title>Contact | Insurely</title><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"/><link rel="stylesheet" href="styles.css"/></head><body>
+<header><div class="wrap nav"><a class="logo" href="index.html">insure<span>ly</span></a>
+<button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
+<nav class="nav-links" id="navLinks"><a href="index.html">Home</a><a href="platform.html">Platform</a><a href="solutions.html">Solutions</a><a href="pricing.html">Pricing</a><a href="about.html">About</a><a class="active" href="contact.html">Contact</a></nav>
+<a class="btn btn-teal" href="contact.html">Start Free Trial</a></div></header>
 <div class="page-hero"><div class="wrap"><h1>Request access</h1><p>Tell us about your book size. We’ll schedule a walkthrough within one business day.</p></div></div>
-<section class="section-alt"><div class="wrap grid-2"><form class="form" id="contactForm"><div id="formSuccess" class="form-success">Thanks — we’ll be in touch shortly.</div>
-<label>Full name *</label><input required name="name"/><label>Work email *</label><input required type="email" name="email"/>
-<label>Agency</label><input name="agency"/><label>Message *</label><textarea required name="message" rows="5"></textarea>
-<button class="btn btn-teal" type="submit">Send message</button></form>
-<div><img class="split-img" src="images/meeting.jpg" alt="Meeting with Insurely"/><p class="muted" style="margin-top:14px">hello@insurely.com · Mon–Fri 9–6 ET</p></div></div></section>
-<footer><div class="wrap"><div class="footer-grid"><div><a class="logo" href="index.html" style="color:#0f1c2e">insure<span>ly</span></a><p class="muted" style="margin-top:10px;font-size:14px">Automation for modern insurance agencies.</p></div><div><h4>Product</h4><a href="platform.html">Platform</a><a href="solutions.html">Solutions</a><a href="pricing.html">Pricing</a></div><div><h4>Company</h4><a href="about.html">About</a><a href="contact.html">Contact</a></div><div><h4>Legal</h4><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></div></div><div class="footer-bottom">© 2026 Insurely, Inc. All rights reserved.</div></div></footer><script src="app.js"></script></body></html>
+<section class="section-alt"><div class="wrap contact-grid">
+<form class="form" id="contactForm">
+<div id="formSuccess" class="form-success">Thanks — we’ll be in touch shortly.</div>
+<div class="form-row"><div><label>Full name *</label><input required name="name" placeholder="Jordan Lee"/></div>
+<div><label>Work email *</label><input required type="email" name="email" placeholder="jordan@agency.com"/></div></div>
+<div class="form-row"><div><label>Agency *</label><input required name="agency" placeholder="Lakeview Insurance"/></div>
+<div><label>Phone</label><input type="tel" name="phone" placeholder="+1 (555) 000-0000"/></div></div>
+<div class="form-row"><div><label>Book size</label><select><option>Under 1,000 policies</option><option selected>1,000–5,000</option><option>5,000+</option></select></div>
+<div><label>Plan interest</label><select id="plan"><option>Essentials</option><option selected>Growth</option><option>Enterprise</option><option>Demo only</option></select></div></div>
+<label>Message *</label><textarea required name="message" rows="5" placeholder="What should we know about your renewals workflow?"></textarea>
+<label><input type="checkbox" required style="width:auto;margin-right:8px"/> I agree to be contacted about Insurely. *</label>
+<button class="btn btn-teal" type="submit">Send message</button>
+<p class="muted" style="font-size:12px;margin-top:8px">By submitting you agree to our <a href="privacy.html">Privacy Policy</a>.</p>
+</form>
+<div>
+<div class="contact-cards">
+<div class="contact-card"><h4>Sales</h4><p><a href="mailto:hello@insurely.com">hello@insurely.com</a><br/>Mon–Fri 9–6 ET</p></div>
+<div class="contact-card"><h4>Support</h4><p><a href="mailto:support@insurely.com">support@insurely.com</a></p></div>
+<div class="contact-card"><h4>Office</h4><p>88 Federal Plaza, Floor 12<br/>Chicago, IL 60601</p></div>
+</div>
+<div class="map-box" style="margin-top:12px"><div><strong>Book a video walkthrough</strong><p class="muted" style="margin-top:8px">We’ll send a calendar link after you submit.</p></div></div>
+<img class="split-img" style="margin-top:12px;aspect-ratio:16/10" src="images/meeting.jpg" alt="Meeting"/>
+</div>
+</div></section>
+<section><div class="wrap"><div class="faq">
+<details open><summary>Need a demo?</summary><p>Choose Demo only and share your AMS — we’ll tailor the walkthrough.</p></details>
+<details><summary>Existing customer?</summary><p>Email support@insurely.com from your account address.</p></details>
+</div></div></section>
+<footer><div class="wrap"><div class="footer-grid"><div><a class="logo" href="index.html" style="color:#0f1c2e">insure<span>ly</span></a><p class="muted" style="margin-top:10px;font-size:14px">Automation for modern insurance agencies.</p></div>
+<div><h4>Product</h4><a href="platform.html">Platform</a><a href="solutions.html">Solutions</a><a href="pricing.html">Pricing</a></div>
+<div><h4>Company</h4><a href="about.html">About</a><a href="contact.html">Contact</a></div>
+<div><h4>Legal</h4><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></div></div>
+<div class="footer-bottom">© 2026 Insurely, Inc. All rights reserved.</div></div></footer><script src="app.js"></script></body></html>
