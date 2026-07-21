@@ -538,3 +538,24 @@ img { height: auto; }
 header .logo-insurely .logo-word { color: #fff; }
 footer .logo-insurely .logo-word { color: #0b1c2c !important; }
 .logo-mark, .logo-text { display: none !important; }
+
+/* ---- Unique motion / section language ---- */
+/* Insurely motion — horizontal slide + timeline feel */
+.reveal { opacity: 0; transform: translateX(-28px); transition: .8s var(--ease); }
+.reveal.in { opacity: 1; transform: none; }
+.process { position: relative; }
+.process::before {
+  content: ""; position: absolute; left: 8%; right: 8%; top: 28px; height: 2px;
+  background: linear-gradient(90deg, transparent, var(--teal), transparent); opacity: .45;
+}
+.process .step { transition: transform .4s var(--ease), background .4s; }
+.process .step:hover { transform: translateY(-6px); background: #fff; }
+.card:hover { transform: translateY(-8px); border-color: var(--teal); }
+.btn-teal { position: relative; overflow: hidden; }
+.btn-teal::after {
+  content: ""; position: absolute; inset: 0; background: linear-gradient(120deg, transparent, rgba(255,255,255,.25), transparent);
+  transform: translateX(-120%); transition: transform .6s;
+}
+.btn-teal:hover::after { transform: translateX(120%); }
+.review-card { transition: transform .4s var(--ease), box-shadow .4s; }
+.review-card:hover { transform: translateY(-8px); box-shadow: 0 18px 40px rgba(11,28,44,.08); }
